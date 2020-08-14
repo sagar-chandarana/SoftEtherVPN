@@ -4,7 +4,7 @@ file(GLOB HEADERS_MAYAQUA "*.h")
 if(WIN32)
   add_library(mayaqua STATIC ${SOURCES_MAYAQUA} ${HEADERS_MAYAQUA})
 else()
-  add_library(mayaqua SHARED ${SOURCES_MAYAQUA} ${HEADERS_MAYAQUA})
+  add_library(mayaqua STATIC ${SOURCES_MAYAQUA} ${HEADERS_MAYAQUA})
 endif()
 
 target_include_directories(mayaqua PUBLIC .)
